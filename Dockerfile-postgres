@@ -1,0 +1,10 @@
+# Use the official PostgreSQL image as a parent image
+FROM postgres:latest
+
+# Set environment variables
+ENV POSTGRES_DB stc_task
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD task
+
+# Expose the default PostgreSQL port
+EXPOSE 5432
